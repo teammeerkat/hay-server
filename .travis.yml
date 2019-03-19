@@ -1,0 +1,10 @@
+language: node_js
+node_js: node
+services: mongodb
+env: MONGODB_URI=mongodb://127.0.0.1:27017/polls
+deploy:
+  provider: heroku
+  app:
+    master: hay-server
+  api_key:
+    secure: b/DprkdoMg3HAW5i+C6qYPcXggERyduASOunytxoJkVplEmWuLMm2V3x5QIeWokLP3qY0miXZ7huqYbQrHzWXPLKJeZhJAkv0lwjISdPrJ2pXDgKswvaDbFODfPMMVW0CuJASMuupF8vj8pDXmdhho3r8jJj95p8WwyUowje9y/j67G09o3YND9Ug2KX/J/Ytugp2YFKw4plMxGhLgoHVBV4Zh+HbTbG+t+8eSMQKdXtXnqzwX+b+08CvafsNRQrgzCulEQ51kE1cX7zcYYt9iAdy5XLA7O7Y17tmuvi0vQ0P8x297VVICKNlynzw6GK3meKI7zuaU98HKfU6OL01tLm7/l97eeRDxZppGl5ygJwEBiiGPQy+i0e20jOZkXhLzSeNqj0zbTXrgRjCGl77F9uaQtIN7WdbDCglUt0XTzkY85aoDHjGQ1p6/Lg9JBz3HwbIns7cukLsBzfbhN4ox7az6WFDC5AEYUWY9hAqEaliKJb0hUUjML6osZbRwXa8W7kL8aKg+JnTXukxNJkuV0VATNlO2jg2YDOpEso6ed35f9qqiqGTtLCC+VbXpJmkNjvTV76JE4qSWQj3kVDIXuw/lzq+OkMLmG1z2hnXJfmoDbLlAW/1DXvQR6L65kaRwCUHAx87WqNxCL2TNHRxlq1dEIi5+TkPTNixv1P8r4=

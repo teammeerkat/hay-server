@@ -9,7 +9,7 @@ beforeAll(() => {
   return connect();
 });
 
-beforeEach(() => {
+afterEach(() => {
   return mongoose.connection.dropDatabase();
 });
 

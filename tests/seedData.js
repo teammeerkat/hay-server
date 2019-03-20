@@ -1,11 +1,12 @@
 
 const Poll = require('../lib/models/Poll');
+const chance = require('chance').Chance();
 
 module.exports = function(count = 10) {
   const polls = [...Array(count)].map((_, i) => ({
-    author: 'test.user',
+    email: chance.email(),
     question: `My question${i}`,
-    options: ['option1', 'options2']
+    options: [chance.string(), chance.string(), chance.string()]
   }));
 
   return Poll.create(polls);
